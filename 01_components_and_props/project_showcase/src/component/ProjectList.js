@@ -1,6 +1,16 @@
-const ProjectList = () => {
+import ProjectListItem from "./ProjectListItem";
+
+const ProjectList = ({ projects }) => {
+    // console.log(projects);
+
+    const ProjectListItems = projects.map(project => {
+        // console.log(project);
+
+        return <ProjectListItem />
+    });
+
     return (
-        <h3>ProjectList component</h3>
+        <h3>{ProjectListItems}</h3>
     );
 }
 
