@@ -1,8 +1,9 @@
 // should render once for every object inside "projects"
 
-const ProjectListItem = () => {
+const ProjectListItem = ({project}) => {
+
     return (
-        <p>ProjectListItem component</p>
+        <p>{project.name}</p>
     );
 }
 

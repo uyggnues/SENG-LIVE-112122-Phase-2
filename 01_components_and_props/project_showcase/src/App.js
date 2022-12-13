@@ -34,7 +34,7 @@ const App = () => {
       <ProjectList 
       
       // immutable
-      projects={projects[0]}
+      projects={projects}
       />
     </>
   )
