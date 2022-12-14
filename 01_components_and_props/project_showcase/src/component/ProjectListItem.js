@@ -12,7 +12,7 @@ const ProjectListItem = ({id, about, image, link, name, phase}) => {
     return (
         <li className="card">
             <figure className="image">
-                <image src={image} alt={name} />
+                <img src={image} alt={name} />
                 <button onClick={handleClaps} className="claps">👏{clapCount}</button>
             </figure>
 
