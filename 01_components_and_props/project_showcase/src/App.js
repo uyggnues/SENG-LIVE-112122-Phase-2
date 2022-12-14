@@ -13,33 +13,15 @@ import ProjectList from "./component/ProjectList";
 
 import projects from "./projects"
 
+
 const App = () => {
-
-  // console.log(projects);
-
   return (
-    <>
-      <div>PROJECT SHOWCASE</div>
-      <Header 
-
-        // firstName, lastName, age => key
-        // "louis", "Medina", 32 => objects
-
-        firstName="Louis" 
-        lastName="Medina" 
-        age={32}
-        projects={projects}
-        />
+      <div className="App">
+      <Header />
       <ProjectForm />
-      <ProjectList 
-      
-      // immutable
-      projects={projects}
-      />
-    </>
+      <ProjectList projects={projects} />
+      </div>
   )
 }
 
-// import app from "./App"
-// import {firstComponent, secondComponent} from "./other component"
 export default App;
